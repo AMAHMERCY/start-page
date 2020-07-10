@@ -1,0 +1,73 @@
+.header{
+    background-color: red;
+    height: 280px;
+
+}
+div.start{
+    text-align: center;
+    color: white;
+    margin:auto 2px;
+    padding: 0px;
+
+}
+div.container1{
+   /* float: right;*/
+    position: absolute;
+    right:20%; 
+    
+}
+div.Lorem{
+    /*margin: 20px;
+    text-align: left;
+    height: 12pt;*/
+    position: absolute;
+    right: 10%;
+}
+div.wrap1{
+  /*  float: left;
+    top:-100px;*/
+    position: absolute;
+    left: 10%;
+}
+div.ipsum{
+    margin: 20px;
+    text-align: left;
+}
+footer{
+    position: absolute;
+    bottom: -80%;
+    background-color: grey;
+     height:10%;
+     width: 100%;
+}
+footer div.box{
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+footer div.main{
+    
+    position: relative;
+    left:30%;
+resize: horizontal;
+    
+}
+footer div.w3{
+    
+    font-weight: bolder;
+    text-align: center;
+
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+}
+div.nav{
+    padding: 10px 15px 10px 15px;
+    position: fixed;
+    background-color: red;
+    width: 100%;
+}
+
