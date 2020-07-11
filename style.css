@@ -13,21 +13,29 @@ div.start{
 div.container1{
    /* float: right;*/
     position: absolute;
-    right:20%; 
+    right:2%; 
+    color:red;
+    margin-top: -2%;
+    font-size: 1500%;
     
 }
 div.Lorem{
     /*margin: 20px;
     text-align: left;
-    height: 12pt;*/
+    height: 12pt;
     position: absolute;
-    right: 10%;
+    right: 10%;*/
+    margin-left: 45%;
+    height: 90%;
 }
 div.wrap1{
   /*  float: left;
     top:-100px;*/
     position: absolute;
-    left: 10%;
+    left: 11%;
+    color:red;
+    margin-top: -3%;
+    font-size: 1800%;
 }
 div.ipsum{
     margin: 20px;
@@ -35,21 +43,24 @@ div.ipsum{
 }
 footer{
     position: absolute;
-    bottom: -80%;
-    background-color: grey;
+    margin-top: 80px;
+    
      height:10%;
-     width: 100%;
+
 }
-footer div.box{
+ div.box{
     font-weight: bolder;
     text-align: center;
     color: white;
+    background-color: grey;
+    height: 70px;
+    margin-top: 15%;
 }
-footer div.main{
+footer div.icons{
     
+    text-align: center;
     position: relative;
-    left:30%;
-resize: horizontal;
+    left: 400%;
     
 }
 footer div.w3{
@@ -65,9 +76,13 @@ button{
 
 }
 div.nav{
-    padding: 10px 15px 10px 15px;
+    
     position: fixed;
     background-color: red;
-    width: 100%;
+    width: 110%;
 }
 
+div.wrap{
+    background-color: rgba(128, 128, 128, 0.938);
+    height: 90%;
+}
