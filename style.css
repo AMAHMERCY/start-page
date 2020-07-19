@@ -1,88 +1,167 @@
-.header{
-    background-color: red;
-    height: 280px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul.nav{ 
+    position: fixed;
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    list-style-type: none;
+    line-height: 10px;
+}
+ul.nav li{
+    display: inline-block;
+    margin: 1.3em;
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:active{
+    border-bottom: 2px solid #fff;
+}
 
+a:hover{
+    border-bottom: 3px solid #2A4C6E;
+    color: #2A4C6E;
 }
 div.start{
+    height: 450px;
+    width: 100%;
     text-align: center;
-    color: white;
-    margin:auto 2px;
-    padding: 0px;
-
+    color: #fff;
+    padding: 150px 0px 20px 0px;
+    font-size: 1.3em;
+    font-family: monospace;
+    text-transform: capitalize;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(imgs/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-div.container1{
-   /* float: right;*/
-    position: absolute;
-    right:2%; 
-    color:red;
-    margin-top: -2%;
-    font-size: 1500%;
-    
+p.template{
+  padding: 5px 0px 8px 0px;
+  text-align: center;
+  animation-name: template;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-div.Lorem{
-    /*margin: 20px;
-    text-align: left;
-    height: 12pt;
-    position: absolute;
-    right: 10%;*/
-    margin-left: 45%;
-    height: 90%;
-}
-div.wrap1{
-  /*  float: left;
-    top:-100px;*/
-    position: absolute;
-    left: 11%;
-    color:red;
-    margin-top: -3%;
-    font-size: 1800%;
-}
-div.ipsum{
-    margin: 20px;
-    text-align: left;
-}
-footer{
-    position: absolute;
-    margin-top: 80px;
-    
-     height:10%;
-
-}
- div.box{
-    font-weight: bolder;
-    text-align: center;
-    color: white;
-    background-color: grey;
-    height: 70px;
-    margin-top: 15%;
-}
-footer div.icons{
-    
-    text-align: center;
-    position: relative;
-    left: 400%;
-    
-}
-footer div.w3{
-    
-    font-weight: bolder;
-    text-align: center;
-
+/* animation styling */
+@keyframes template {
+  20% {color: green;
+    text-shadow: 3px 3px 3px grey;
+  }
+  40% {color: gold; left:0px; top:200px;
+    text-shadow: 3px 3px 3px navy;
+  }
+  60% {color: maroon;
+    text-shadow: 3px 3px 3px slateblue;
+  }
+  80% {color: darkolivegreen;
+    text-shadow: 3px 3px 3px greenyellow;
+  }
+  100% {color: brown;
+    text-shadow: palegreen;
+  }
 }
 button{
     background-color: black;
     color: white;
     padding: 5px;
-
+    height: 60px;
+    width: 15%;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    font-size: 1.3em;
 }
-div.nav{
-    
-    position: fixed;
-    background-color: red;
-    width: 110%;
+div.container1{
+    padding: 15px 30px 0px 0px;
+    float: right;
+    color: #2A4C6E;
+    font-size: 15em; 
+    z-index: -1;
 }
-
+div.ipsum{
+    margin: 20px;
+    text-align: justify;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+}
+div.ipsum > h1{
+    height: 50px;
+    width: 17%;
+    line-height: 70px;
+    border-bottom: 3px solid #000;
+}
+div.ipsum > p, div.Lorem > p{
+    padding: 20px 0px;
+}
 div.wrap{
-    background-color: rgba(128, 128, 128, 0.938);
-    height: 90%;
+    height: 300px;
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 2px solid grey;
 }
+div.Lorem{
+    height: 90%;
+    float: right;
+    font-family: sans-serif;
+    padding: 10px 30px 0px 0px;
+}
+div.Lorem > h1{
+    border-bottom: 3px solid #000;
+    width: 25%;
+}
+div.wrap1{
+    color: #2A4C6E;
+    font-size: 16em;
+    float: left;
+    position: relative;
+    bottom: 10%;
+    padding-left: 5px;
+    z-index: -1;
+}
+footer{
+    height: auto;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    line-height: 30px;
+    padding: 20px 0px 18px 0px;
+}
+div.box{
+    text-align: center;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+div.box > strong{
+    height: 40px;
+    width: 50%;
+    border-bottom: 2px solid #fff;
+}
+footer div.icons > i{
+    text-align: center;
+    margin: 6px;
+    cursor: pointer;
+}
+footer div.w3{
+    font-weight: bolder;
+    cursor: pointer;
+    width: 15%;
+    margin: auto;
+}
+
+
+
+
