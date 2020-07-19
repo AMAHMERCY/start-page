@@ -120,6 +120,8 @@ div.Lorem{
 div.Lorem > h1{
     border-bottom: 3px solid #000;
     width: 25%;
+    line-height: 0.8em;
+    text-transform: capitalize;
 }
 div.wrap1{
     color: #2A4C6E;
