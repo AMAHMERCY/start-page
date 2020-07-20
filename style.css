@@ -4,164 +4,166 @@
     box-sizing: border-box;
 }
 ul.nav{ 
-    position: fixed;
-    background-color: #000;
-    height: 80px;
+    height: 60px;
     width: 100%;
+    position: fixed;
+    background-color: #F44336;
     list-style-type: none;
-    line-height: 10px;
+    box-shadow: 1px 1px 3px grey;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
 }
 ul.nav li{
-    display: inline-block;
-    margin: 1.3em;
+    float: left;
     font-size: 1.5em;
 }
 a{
+    height: 60px;
+    padding: 0.6em 1em;
     text-decoration: none;
     color: #fff;
+    display: block;
 }
-a:active{
-    border-bottom: 2px solid #fff;
+li > a.active{
+    background: #fff;
+    color: #000;
 }
-
+li > a.active:hover{
+    background: #CCCCCC;
+    color: #000;
+}
 a:hover{
-    border-bottom: 3px solid #2A4C6E;
-    color: #2A4C6E;
+    background: #fff;
+    color: #000;
 }
 div.start{
-    height: 450px;
+    height: auto;
     width: 100%;
     text-align: center;
     color: #fff;
-    padding: 150px 0px 20px 0px;
-    font-size: 1.3em;
-    font-family: monospace;
-    text-transform: capitalize;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(imgs/bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 150px 0px 120px 0px;
+    background: #F44336;
+    font-family: sans-serif;
+}
+div.start > h1 > b{
+    font-size: 2.2em;
 }
 p.template{
-  padding: 5px 0px 8px 0px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
-  animation-name: template;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-direction: reverse;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-/* animation styling */
-@keyframes template {
-  20% {color: green;
-    text-shadow: 3px 3px 3px grey;
-  }
-  40% {color: gold; left:0px; top:200px;
-    text-shadow: 3px 3px 3px navy;
-  }
-  60% {color: maroon;
-    text-shadow: 3px 3px 3px slateblue;
-  }
-  80% {color: darkolivegreen;
-    text-shadow: 3px 3px 3px greenyellow;
-  }
-  100% {color: brown;
-    text-shadow: palegreen;
-  }
+  font-size: 1.5em;
 }
 button{
     background-color: black;
+    border: none;
     color: white;
     padding: 5px;
     height: 60px;
     width: 15%;
-    border-radius: 20px;
     cursor: pointer;
     outline: none;
     margin-top: 10px;
     font-size: 1.3em;
 }
+button:hover{
+    background: #CCCCCC;
+    color: #000;
+}
+div.container{
+    padding: 30px 150px 0px 150px;
+}
 div.container1{
-    padding: 15px 30px 0px 0px;
+    padding: 65px 30px 0px 0px;
     float: right;
-    color: #2A4C6E;
-    font-size: 15em; 
+    color: #F44336;
+    font-size: 12em; 
     z-index: -1;
 }
 div.ipsum{
+    height: auto;
+    width: 65%;
     margin: 20px;
     text-align: justify;
-    height: auto;
     padding-bottom: 30px;
     font-family: sans-serif;
 }
 div.ipsum > h1{
     height: 50px;
-    width: 17%;
     line-height: 70px;
-    border-bottom: 3px solid #000;
+    color: #434343;
+    font-family: sans-serif;
 }
-div.ipsum > p, div.Lorem > p{
-    padding: 20px 0px;
+div.ipsum > p:nth-child(odd), div.Lorem > p:nth-child(odd){
+    padding: 50px 0px;
+    color: #848484;
+    text-align: left;
+    line-height: 23px;
 }
 div.wrap{
     height: 300px;
     width: 100%;
-    padding: 20px 0px;
-    border-top: 2px solid grey;
+    background: #F1F1F1;
+    padding: 100px 180px 380px 180px;
 }
 div.Lorem{
     height: 90%;
+    width: 70%;
     float: right;
     font-family: sans-serif;
-    padding: 10px 30px 0px 0px;
 }
 div.Lorem > h1{
-    border-bottom: 3px solid #000;
-    width: 25%;
     line-height: 0.8em;
     text-transform: capitalize;
+    padding-bottom: 40px;
+    color: #434343;
 }
 div.wrap1{
-    color: #2A4C6E;
-    font-size: 16em;
+    color: #F44336;
+    font-size: 12em;
     float: left;
     position: relative;
     bottom: 10%;
-    padding-left: 5px;
-    z-index: -1;
+    padding: 30px 0px;
+}
+div.box{
+    height: auto;
+    width: 100%;
+    padding: 100px 0px;
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    text-transform: capitalize;
+    background: #666666;
+    font-size: 2em;
 }
 footer{
     height: auto;
     width: 100%;
-    background: #000;
-    color: #fff;
+    color: grey;
     text-align: center;
     font-family: monospace;
     line-height: 30px;
-    padding: 20px 0px 5px 0px;
-}
-div.box{
-    text-align: center;
-    font-family: monospace;
-    text-transform: capitalize;
-}
-div.box > strong{
-    height: 40px;
-    width: 50%;
-    border-bottom: 2px solid #fff;
+    padding: 70px 0px 70px 0px;
 }
 footer div.icons > i{
     text-align: center;
     margin: 6px;
     cursor: pointer;
 }
+footer div.icons > i:hover{
+    color: silver;
+    cursor: pointer;
+}
 footer div.w3{
-    font-weight: bolder;
+    font-family: monospace;
     cursor: pointer;
     width: 15%;
     margin: auto;
+    font-size: 1.2em;
+}
+label{
+    text-decoration: underline;
 }
 
 
